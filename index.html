@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cherry Parfumerie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="brand">Cherry Parfumerie</h1>
+      <nav aria-label="Main navigation">
+        <button id="cart-toggle" aria-controls="cart" aria-expanded="false" class="btn btn-outline">Cart <span id="cart-count">0</span></button>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="hero" class="hero">
+      <h2>Welcome to Cherry — exquisite scents, handcrafted for you</h2>
+      <p>Explore our signature collection.</p>
+    </section>
+
+    <section id="catalog" class="catalog" aria-label="Product catalog">
+      <!-- Product cards rendered by script.js -->
+    </section>
+
+    <aside id="cart" class="cart" aria-live="polite" aria-label="Shopping cart">
+      <h3>Your Cart</h3>
+      <div id="cart-items" class="cart-items"></div>
+      <div class="cart-summary">
+        <div>Subtotal: <strong id="cart-subtotal">₦0</strong></div>
+        <div>Delivery: <strong id="cart-delivery">₦0</strong></div>
+        <div class="cart-total">Total: <strong id="cart-total">₦0</strong></div>
+      </div>
+      <button id="checkout-open" class="btn btn-primary" aria-controls="checkout">Proceed to Checkout</button>
+      <button id="clear-cart" class="btn btn-outline">Clear Cart</button>
+    </aside>
+
+    <section id="checkout" class="checkout hidden" aria-hidden="true">
+      <h3>Checkout</h3>
+      <form id="checkout-form">
+        <label>
+          Full name
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Address
+          <textarea name="address" required></textarea>
+        </label>
+        <div class="checkout-actions">
+          <button type="submit" class="btn btn-primary">Pay now (mock)</button>
+          <button type="button" id="checkout-cancel" class="btn btn-outline">Cancel</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>© Cherry Parfumerie — handcrafted scents</small>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#ffe3ec" />
+  <g fill="#d81b60" font-family="Arial, sans-serif" font-size="72" font-weight="700">
+    <text x="50%" y="45%" dominant-baseline="middle" text-anchor="middle">Cherry</text>
+    <text x="50%" y="60%" dominant-baseline="middle" text-anchor="middle" font-size="36">Signature</text>
+  </g>
+</svg>
+
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800">
+  <rect width="100%" height="100%" fill="#fff1e6" />
+  <g fill="#8b4513" font-family="Arial, sans-serif" font-size="72" font-weight="700">
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">Arabian Oud</text>
+  </g>
+</svg>
